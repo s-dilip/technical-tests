@@ -1,8 +1,14 @@
 python3 scrabble.py
 
 To Do
-[]
+[] Create a function to calculate points given a word
+[] Create a Rack class
+[] Create a Tile Bag class
 
+
+-------------------------------------
+Approaches
+- Used a match case statement for calculating points
 
 
 
