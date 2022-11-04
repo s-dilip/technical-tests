@@ -5,8 +5,9 @@ To Do
 [x] Create a Rack class
 [x] Create function to display rack with tiles in terminal
 [x] Create a function to assign 7 random letters to the rack
-[] Create a Tile Bag class
-
+[x] Create a Tile Bag class
+[x] Create a function to assign 7 tiles at random from the tile bag to the rack
+[] 
 
 -------------------------------------
 Approaches
@@ -18,15 +19,16 @@ Approaches
 - Create a dictionary where the values are the alphabets to tiles and key is how many of those tiles are in the bag
 - Values of the dictionary would be in a list
 
+- 
+
 
 -------------------------------------
 Problems/ Errors to Fix
 - TypeError: 'builtin_function_or_method' object is not subscriptable
 - This occurs when the final for loop is being run; Maybe the dictionary item is not being accessed?
-
-
+- FIXED: The error was due to me using [] square brackets instead of () after append 
 
 
 -------------------------------------
 Keep in Mind
-- 
+- There are 98 tiles in total; Returning length of self.tiles in Tilebag confirms this

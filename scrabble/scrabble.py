@@ -32,14 +32,27 @@ class TileBag:
         for key in tiles_distribution:
             for i in range(int(key)):
 
-                print(key)
-
                 alphabets = tiles_distribution[key]
 
                 for alpbt in alphabets:
                     new_tile_bag.append(alpbt)
         
         return new_tile_bag
+
+    def draw_7_tiles(self):
+
+        tiles_2_return = []
+
+        for i in range(7):
+
+            random_index = random.randint(0, len(self.tiles))
+
+            tile = self.tiles[random_index]
+            del self.tiles[random_index]
+
+            tiles_2_return.append(tile)
+        
+        return tiles_2_return
     
 
 def calculate_points(word):
@@ -81,6 +94,10 @@ def get_random_letters():
     return tiles_2_return
 
 tile_bag = TileBag()
+rack = Rack(tile_bag.draw_7_tiles())
+
+print(rack.tiles)
+print(calculate_points(rack.tiles))
 
 
 
