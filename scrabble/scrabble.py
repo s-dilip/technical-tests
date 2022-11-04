@@ -34,18 +34,13 @@ class TileBag:
 
                 print(key)
 
-                alphabets = tiles_distribution.get(key)
+                alphabets = tiles_distribution[key]
 
                 for alpbt in alphabets:
-                    new_tile_bag.append[alpbt]
+                    new_tile_bag.append(alpbt)
         
         return new_tile_bag
     
-    # def show_tiles(self):
-
-    #     tiles = self.tiles
-
-    #     return 
 
 def calculate_points(word):
 
