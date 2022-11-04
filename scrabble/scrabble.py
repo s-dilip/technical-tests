@@ -1,3 +1,4 @@
+import random
 
 class Rack:
 
@@ -32,8 +33,25 @@ def calculate_points(word):
     
     return total_points
 
-tiles = ['G', 'U', 'A', 'R', 'D', 'I', 'A', 'N']
-rack = Rack(tiles)
-print(rack.show_rack())
+# tiles = ['G', 'U', 'A', 'R', 'D', 'I', 'A', 'N']
+# rack = Rack(tiles)
+# print(rack.show_rack())
+
+def get_random_letters():
+
+    alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    tiles_2_return =[]
+
+    for x in range(7):
+        tiles_2_return.append(random.choice(alphabets))
+    
+    return tiles_2_return
+
+print(get_random_letters())
+
+
+
+
+
 
 
