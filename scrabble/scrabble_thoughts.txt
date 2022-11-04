@@ -2,13 +2,17 @@ python3 scrabble.py
 
 To Do
 [x] Create a function to calculate points given a word
-[] Create a Rack class
+[x] Create a Rack class
+[x] Create function to display rack with tiles in terminal
+[] Assign 7 random letters to the rack
+
 [] Create a Tile Bag class
 
 
 -------------------------------------
 Approaches
 - Used a match case statement for calculating points
+- Use a list to store the alphabet tiles and pass this when instantiating a rack
 
 
 

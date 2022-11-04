@@ -1,3 +1,13 @@
+
+class Rack:
+
+    def __init__(self, tiles):
+        self.tiles = tiles
+
+    def show_rack(self):
+        return self.tiles
+
+
 def calculate_points(word):
 
     total_points = 0
@@ -22,5 +32,8 @@ def calculate_points(word):
     
     return total_points
 
-print(calculate_points("GUARDIAN"))
+tiles = ['G', 'U', 'A', 'R', 'D', 'I', 'A', 'N']
+rack = Rack(tiles)
+print(rack.show_rack())
+
 
