@@ -16,21 +16,36 @@ class TileBag:
 
     def generate_tiles(self):
 
+        new_tile_bag = []
+
         tiles_distribution ={
-            12: ['E'],
-            9: ['A', 'I'],
-            8: ['O'],
-            6: ['N', 'R', 'T'],
-            4: ['L', 'S', 'U', 'D'],
-            3: ['G'],
-            2: ['B', 'C', 'M', 'P', 'F', 'H', 'V', 'W', 'Y'],
-            1: ['K', 'J', 'X', 'Q', 'Z']
+            '12': ['E'],
+            '9': ['A', 'I'],
+            '8': ['O'],
+            '6': ['N', 'R', 'T'],
+            '4': ['L', 'S', 'U', 'D'],
+            '3': ['G'],
+            '2': ['B', 'C', 'M', 'P', 'F', 'H', 'V', 'W', 'Y'],
+            '1': ['K', 'J', 'X', 'Q', 'Z']
         }
 
+        for key in tiles_distribution:
+            for i in range(int(key)):
+
+                print(key)
+
+                alphabets = tiles_distribution.get(key)
+
+                for alpbt in alphabets:
+                    new_tile_bag.append[alpbt]
         
+        return new_tile_bag
+    
+    # def show_tiles(self):
 
+    #     tiles = self.tiles
 
-
+    #     return 
 
 def calculate_points(word):
 
@@ -70,7 +85,7 @@ def get_random_letters():
     
     return tiles_2_return
 
-print(get_random_letters())
+tile_bag = TileBag()
 
 
 

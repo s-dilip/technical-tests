@@ -21,7 +21,9 @@ Approaches
 
 -------------------------------------
 Problems/ Errors to Fix
-- 
+- TypeError: 'builtin_function_or_method' object is not subscriptable
+- This occurs when the final for loop is being run; Maybe the dictionary item is not being accessed?
+
 
 
 
