@@ -15,6 +15,8 @@ Approaches
 
 - Use a string with all the Upper case alphabets and use random.choice to pick a random letter
 
+- Create a dictionary where the values are the alphabets to tiles and key is how many of those tiles are in the bag
+- Values of the dictionary would be in a list
 
 
 -------------------------------------

@@ -8,6 +8,29 @@ class Rack:
     def show_rack(self):
         return self.tiles
 
+class TileBag:
+
+    def __init__(self):
+        
+        self.tiles = self.generate_tiles()
+
+    def generate_tiles(self):
+
+        tiles_distribution ={
+            12: ['E'],
+            9: ['A', 'I'],
+            8: ['O'],
+            6: ['N', 'R', 'T'],
+            4: ['L', 'S', 'U', 'D'],
+            3: ['G'],
+            2: ['B', 'C', 'M', 'P', 'F', 'H', 'V', 'W', 'Y'],
+            1: ['K', 'J', 'X', 'Q', 'Z']
+        }
+
+        
+
+
+
 
 def calculate_points(word):
 
