@@ -1,7 +1,7 @@
 python3 scrabble.py
 
 To Do
-[] Create a function to calculate points given a word
+[x] Create a function to calculate points given a word
 [] Create a Rack class
 [] Create a Tile Bag class
 
